@@ -23,40 +23,64 @@
         }
 
         /* 아이디 선택자(#) */
-        #li-1{ background-color: red;}
-        #li-2{ background-color: orange;}
-        #li-3{ background-color: yellow;}
-        #li-4{ background-color: green;}
-        #li-5{ background-color: blue;}
-        
+        #li-1 {
+            background-color: red;
+        }
+
+        #li-2 {
+            background-color: orange;
+        }
+
+        #li-3 {
+            background-color: yellow;
+        }
+
+        #li-4 {
+            background-color: green;
+        }
+
+        #li-5 {
+            background-color: blue;
+        }
+
         /* (,)를 이용해 여러 선택자 동시 작성 가능  */
-        #li-1, #li-2, #li-3, #li-4, #li-5{
+        #li-1,
+        #li-2,
+        #li-3,
+        #li-4,
+        #li-5 {
             color: white;
         }
 
         /* 클래스 선택자 (.) */
-        .test-1{color: red;}
-        .test-2{color: teal; background-color: bisque;}
+        .test-1 {
+            color: red;
+        }
 
-        .aaa{
+        .test-2 {
+            color: teal;
+            background-color: bisque;
+        }
+
+        .aaa {
             font-weight: bold;
         }
 
         /* 모든 요소 선택자 (*) */
 
-        /* 웹폰트 추가*/
-        @font-face {
-    font-family: 'HANAMDAUM';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/HANAMDAUM.woff2') format('woff2');
-    font-weight: 400;
-    font-style: normal;
-}
-        
         * {
-            font-family:'HANAMDAUM';
+            font-family: 'HANAMDAUM';
             font-size: 20px;
         }
 
+
+        /* 웹폰트 추가*/
+        @font-face {
+            font-family: 'HANAMDAUM';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/HANAMDAUM.woff2') format('woff2');
+            font-weight: 400;
+            font-style: normal;
+        }
     </style>
 
 </head>
@@ -93,19 +117,19 @@
 
     <div>
         <strong>strong 태그에 작성된 내용입니다.</strong>
-        
+
         <br>
-        
+
         <span>스팬 태그에 작성된 내용입니다.</span>
-        
+
         <br>
-        
+
         <ul>
             <li>
                 <strong>strong 태그에 작성된 내용입니다.</strong>
             </li>
         </ul>
-        
+
         <ul>
             <li>
                 <span>스팬 태그에 작성된 내용입니다.</span>
@@ -164,7 +188,7 @@
     <pre>
         모든 요소를 선택하는 선택자
     </pre>
-    
+
 </body>
 
 </html>
