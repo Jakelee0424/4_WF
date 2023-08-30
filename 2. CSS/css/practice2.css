@@ -26,9 +26,14 @@
     flex-direction: column;
 }
 
-.header {
+.header{
     height: 15%;
     background-color: gray;
+}
+
+.header:hover{
+    background-color: yellowgreen;
+    cursor: pointer;
 }
 
 .center-container {
@@ -41,22 +46,37 @@
     height: 15%;
     background-color: gray;
 }
+.footer:hover{
+    background-color: yellowgreen;
+    cursor: pointer;
+}
 
 #left {
     width: 30%;
     background-color: lightblue;
+}
+#left:hover {
+    background-color: violet;
 }
 
 #center {
     width: 50%;
     background-color: lightgray;
 }
+#center:hover {
+    background-color: violet;
+}
 
 #right {
     width: 20%;
     background-color: red;
 }
-
+#right:hover {
+    background-color: violet;
+}
+#right:active{
+    background-color: tomato;
+}
 /* ----------------------------------------------- */
 
 .container2 {

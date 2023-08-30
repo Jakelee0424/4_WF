@@ -109,8 +109,8 @@ input[name="fruits"]:checked{
     /* 체크박스 모양 바꾸기 */
 
 #check1 + label {
-    width: 30px;
-    height: 30px;
+    width: 200px;
+    height: 200px;
 
     border: 1px solid hwb(180 14% 19%);
     
@@ -123,11 +123,10 @@ input[name="fruits"]:checked{
 
 /* 체크'된' #check1 뒤에 있는 label 태그 */
 #check1:checked + label{
-    background-image: url(../../iamges/icons8-done.gif);
+    background-image: url(/iamges/imageedit_3_2348370415.gif);
     background-repeat: no-repeat; /*이미지 반복 제거*/
     background-size: cover;
 }
-
 
 #check1{
     display: none;

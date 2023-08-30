@@ -28,7 +28,7 @@
 
 /* 내부 분할 요소 */
 .div1 {
-    height: 50%;
+    height: 50%; /* 굳이 필요 없음*/
     width: 100%;
 }
 
@@ -93,14 +93,33 @@
     background-color: red;
 }
 
-/*  */
+
+#container-4 {
+    border: 1px solid;
+    height: 300px;
+    width: 500px;
+}
 
 .div-4{
+    display: inline-block;
+    width: 50%;
+    height: 100%;
+}
+
+#container-4 > .div-4:first-of-type{
+    background-color: yellow;
+}
+
+#container-4 > .div-4:last-of-type{
+    background-color: aqua;
+}
+
+.div-5{
     border: 3px solid;
     height: 100px;
 }
 
-#test4 {
+#test5 {
     background-color: deeppink;
 
     /* visibility: hidden; */

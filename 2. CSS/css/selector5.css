@@ -1,7 +1,8 @@
 /* :only-child */
 #test1 > p:only-child{
     background-color: blue;
-}   /*자식이 한 개 초과하면 작동 안함*/
+}   /*요소와 관계 없이
+      자식이 한 개 초과하면 작동 안함*/
 
 
 /* :only-of-type */
