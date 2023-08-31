@@ -1,0 +1,244 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+div, section {
+    /* border: 1px solid; */
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+}
+
+/* 햄버거 버튼 */
+
+.hamburger { 
+    flex-basis: 2%;
+}
+
+header > .hamburger > button{
+    background-color: transparent;
+    border: none;
+    font-size: 1.2em;
+    font-weight: light;
+    margin-top : 15px;
+    margin-left: 15px;
+    padding: 10px;
+}
+
+header > .hamburger > button:hover{
+    background-color: #e4e4e4;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+/* 유튜브 로고 */
+
+.main-logo{
+    flex-basis: 10%;
+    margin-top: 15px;
+}
+
+header > .main-logo > a > img{
+    width: 150px;
+    height: 40px;
+}
+
+/* 검색창 */
+
+.search-board{
+    flex-basis: 78%;
+}
+
+.search-board > form{
+    display: flex;
+
+    justify-content: center;
+}
+
+.search-board > form > fieldset:first-of-type{
+    /* flex-basis: 60%; */
+    margin: 0;
+    flex-basis: 50%;
+    border: 1px solid #a7a1a1;
+    border-radius: 100px 0px 0px 100px;
+    display: flex;
+    width: 700px;
+    margin-top: 15px;
+
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#search-btn-hide{
+    flex-basis: 5%;
+    border: none;
+    background-color: transparent;
+    font-size: 14px;
+    display: hidden;
+}
+
+#search-btn-hide:focus{
+    border: none;
+    background-color: transparent;
+    text-align: center;
+    font-size: 14px;
+}
+
+#search-bar{
+    flex-basis: 85%;
+    border: none;
+    font-size: 15px;
+}
+
+#search-bar:focus{
+    outline: none;
+}
+
+#keyboard{
+    flex-basis: 5%;
+    border: none;
+    background-color: transparent;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#keyboard:hover{
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.search-board > form > fieldset:nth-of-type(2){
+    /* flex-basis: 60%; */
+    margin: 0;;
+    flex-basis: 5%;
+    background-color: #eeeeee;
+
+    border: 1px solid #a7a1a1;
+    border-radius: 0px 100px 100px 0px;
+    display: flex;
+    width: 700px;
+    margin-top: 15px;
+    cursor: pointer;
+    
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#search-btn{
+    flex-basis: 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.search-board > form > fieldset:nth-of-type(2):hover{
+    background-color: #cacaca;
+
+}
+
+.search-board > form > fieldset:last-of-type{
+    flex-basis: 2%;
+    margin-left: 10px;
+    margin-top: 15px;
+    padding: 15px;
+    border: none;
+    border-radius: 100px;
+    background-color: #e6e6e6;
+    cursor: pointer;
+    
+    display: flex;
+    align-items: center;
+}
+
+#mic{
+    background-color: transparent;
+    border: none;
+    border-radius: 100%;
+    font-size: 20px;
+    cursor: pointer;
+
+}
+
+.search-board > form > fieldset:last-of-type:hover{
+    margin-top: 15px;
+    border: none;
+    border-radius: 100%;
+    background-color: #b2b1b1;
+}
+
+
+
+/* 상태창 */
+.status-bar{
+    flex-basis: 10%;
+}
+
+
+.status-bar > form > fieldset{
+    flex-basis: 10%;
+    border: none;
+   
+    margin-top: 10px;
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.status-bar button{
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    border-radius: 100%;
+    padding: 20px;
+}
+
+.status-bar button:hover{
+    background-color: #b2b1b1;
+    cursor: pointer;
+}
+
+
+/* --------------메인화면---------- */
+
+.main-content {
+    margin-left: 50px;
+    display: flex;
+}
+
+.main-video{
+    
+    height: 800px;
+    flex-basis: 75%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.video{
+    flex-basis: 60%;
+}
+
+.title{
+    font-size: 30px;
+    font-weight: bold;
+    margin: 20px 10px;
+}
+
+.recommand{
+    flex-basis: 25%;
+}
+
+
+

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>16_youtube-clone</title>
+
+    <link rel="stylesheet" href="/2. CSS/css/youtube-clone.css" type="text/css">
+
+    <script src="https://kit.fontawesome.com/b2efae0e57.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <header>
+
+        <!-- 햄버거 버튼 -->
+        <section class="hamburger">
+            <button class="fa-solid fa-bars"></button>
+        </section>
+
+        <!-- 유튜브 로고 -->
+        <section class="main-logo">
+            <a href="https://www.youtube.com/">
+                <img src="/images/logo/youtube-logo.png" alt="">
+            </a>
+        </section>
+
+        <!-- 검색창 -->
+        <section class="search-board">
+            <form action="#">
+
+                <fieldset>
+                    <button id="search-btn-hide" class="fa-solid fa-magnifying-glass"></button>
+                    <input type="search" id="search-bar" autocomplete="off" placeholder="검색">
+                    <button class="fa-regular fa-keyboard" id="keyboard"></button>
+                </fieldset>
+
+                <fieldset>
+                    <abbr title="검색">
+                        <button id="search-btn" class="fa-solid fa-magnifying-glass"></button>
+                    </abbr>    
+                </fieldset>
+                
+                <fieldset>
+                    <abbr title="음성으로 검색">
+                        <button class="fa-solid fa-microphone" id="mic"></button>
+                    </abbr>
+                </fieldset>
+
+            </form>
+        </section>
+
+        <!-- 상태창 -->
+        <section class="status-bar">
+            <form action="#">
+
+                <fieldset>
+                    <abbr title="만들기"><button class="fa-solid fa-video"></button></abbr>
+                    <abbr title="알림"><button class="fa-solid fa-bell"></button></abbr>
+                    <button class="fa-solid fa-user"></button>
+                </fieldset>
+
+            </form>
+        </section>
+
+    </header>
+
+
+    <main class="main-content">
+
+        <section class="main-video">
+            <iframe height="100%"
+            src="https://www.youtube.com/embed/LwiPUm95RPM?si=zWVI3FsR5nIDLbxq" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            allowfullscreen
+            id="video"></iframe>
+            
+            <section class="title"> [UFC] 맥스 할로웨이 vs 정찬성</section>
+            
+            <section> 
+                <button>크리에이터 프로필</button>
+                <button>크리에이터명</button>
+                <button>구독 버튼</button>
+                <button>좋아요</button>
+                <button>싫어요</button>
+                <button>공유</button>
+                <button>기타</button>
+            </section>
+
+            <section>설명</section>
+
+            <section></section>
+            <section></section>
+        </section>
+
+
+
+        <section class="recommand">추천영상
+            <section> </section>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>
