@@ -1,0 +1,790 @@
+*{ box-sizing: border-box;}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+div, section {
+    /* border: 1px solid; */
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    position: sticky;
+    top: 0;
+    background-color: white;
+}
+
+/* 햄버거 버튼 */
+
+.hamburger { 
+    flex-basis: 2%;
+}
+
+header > .hamburger > button{
+    background-color: transparent;
+    border: none;
+    font-size: 1.2em;
+    font-weight: light;
+    margin-top : 15px;
+    margin-left: 15px;
+    padding: 10px;
+}
+
+header > .hamburger > button:hover{
+    background-color: #e4e4e4;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+/* 유튜브 로고 */
+
+.main-logo{
+    flex-basis: 10%;
+    margin-top: 15px;
+}
+
+header > .main-logo > a > img{
+    width: 150px;
+    height: 40px;
+}
+
+/* 검색창 */
+
+.search-board{
+    flex-basis: 78%;
+    margin-top: 15px;
+}
+
+.search-board > form{
+    display: flex;
+    justify-content: center;
+}
+
+.search-board > form > fieldset:first-of-type{
+    /* flex-basis: 60%; */
+    margin: 0;
+    flex-basis: 50%;
+    border: 1px solid #a7a1a1;
+    border-radius: 100px 0px 0px 100px;
+    display: flex;
+    width: 700px;
+    height: 40px;
+    
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#search-btn-hide{
+    flex-basis: 5%;
+    border: none;
+    background-color: transparent;
+    font-size: 14px;
+    display: hidden;
+}
+
+#search-btn-hide:focus{
+    border: none;
+    background-color: transparent;
+    text-align: center;
+    font-size: 14px;
+}
+
+#search-bar{
+    flex-basis: 85%;
+    border: none;
+    font-size: 15px;
+}
+
+#search-bar:focus{
+    outline: none;
+}
+
+#keyboard{
+    flex-basis: 5%;
+    border: none;
+    background-color: transparent;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#keyboard:hover{
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.search-board > form > fieldset:nth-of-type(2){
+    /* flex-basis: 60%; */
+    margin: 0;;
+    flex-basis: 5%;
+    background-color: #eeeeee;
+    
+    border: 1px solid #a7a1a1;
+    border-radius: 0px 100px 100px 0px;
+    display: flex;
+    width: 700px;
+    height: 40px;
+    cursor: pointer;
+    
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#search-btn{
+    flex-basis: 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.search-board > form > fieldset:nth-of-type(2):hover{
+    background-color: #cacaca;
+
+}
+
+.search-board > form > fieldset:last-of-type{
+    flex-basis: 2%;
+    padding: 10px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 100px;
+    background-color: #e6e6e6;
+    cursor: pointer;
+    
+    display: flex;
+    align-items: center;
+}
+
+#mic{
+    background-color: transparent;
+    border: none;
+    border-radius: 100%;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.search-board > form > fieldset:last-of-type:hover{
+    border: none;
+    border-radius: 100%;
+    background-color: #b2b1b1;
+}
+
+
+/* 상태창 */
+.status-bar{
+    flex-basis: 10%;
+}
+
+
+.status-bar > form > fieldset{
+    flex-basis: 10%;
+    border: none;
+   
+    margin-top: 10px;
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.status-bar button{
+    background-color: transparent;
+    border: none;
+    font-size: 15px;
+    border-radius: 100%;
+    padding: 15px;
+}
+
+.status-bar button:hover{
+    background-color: #b2b1b1;
+    cursor: pointer;
+}
+
+
+/* --------------메인화면---------- */
+
+
+.main-content {
+    width: 1700px;
+    margin: auto;
+    display: flex;
+}
+
+.main-video{
+    flex-basis: 70%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+
+.recommand{
+    flex-basis: 30%;
+}
+
+#video{
+    width: 100%;
+    height: 60%;
+    flex-basis: 60%;
+    border-radius: 10px;
+}
+
+.title{
+    flex-basis: 1%;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 8px 0;
+}
+
+.creator-information{
+    flex-basis: 3%;
+    margin: 0;
+    padding: 0;
+}
+
+.content{
+    flex-basis: 10%
+}
+
+.comment{
+    flex-basis: 26%;
+}
+
+.creator-information > fieldset{
+    display: flex;
+    align-items: center;
+    border: none;
+    font-size: 20px;
+}
+
+#main-logo{
+    width: 50px;
+    height: 40px;
+}
+
+.img-wrapper {
+    flex-basis: 4%;
+    height: 45px;
+    border-radius: 50%;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-wrapper > img {
+    height: 100%;
+}
+
+.creator-information > fieldset > .name{
+    flex-basis: 10%;
+    display: flex;
+    flex-direction: column;
+    border: none;
+    line-height: 0%;
+    margin-left: 5px;
+}
+
+.creator-information > fieldset > .name > .subscriber{
+    color: #a7a1a1;
+    margin-left: 0px;
+    font-size: 12px;
+}
+
+
+.creator-information > fieldset > div > .creator-name{
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: -1px;
+    background-color: transparent;
+    border: none;
+    font-weight: 600;
+}
+
+.checked-circle{
+    flex-basis: 1%;
+    display: flex;
+    flex-direction: column;
+    border: none;
+    background-color: transparent;
+    height: 40px;
+}
+
+#checked-circle{
+    border: none;
+    background-color: transparent;
+}
+
+.checked-circle > div{
+    border: none;
+    background-color: transparent;
+}
+
+.subscribe{
+    flex-basis: 5%;
+    background-color: black;
+    color: white;
+    padding: 10px 12px;
+    margin-left: 10px;
+    border-radius: 50px;
+    cursor: pointer;
+    border: none;
+}
+
+.subscribe:hover{
+    background-color: rgb(50, 50, 50);
+}
+
+.subscribe:active{
+    background-color: #cacaca;
+}
+
+.creator-information > fieldset > .space{
+    flex-basis: 39%;
+}
+
+.creator-information > fieldset > .thumbs-up-and-down{
+    flex-basis: 15%;
+    display: flex;
+    background-color: #f4f2f2;
+    line-height: 0.5;
+    border-radius: 20px;
+    margin: 0 10px;
+}
+
+.thumbs-up{
+    display: flex;
+    padding-right: 10px;
+    border-right: 1px solid #e5e5e5;
+    cursor: pointer;
+}
+
+.thumbs-up:hover{
+    border-radius: 20px 0 0 20px;
+    background-color: #e4e4e4;
+}
+
+.thumbs-down:active{
+    border-radius: 20px 0 0 20px;
+    font-weight: bold;
+}
+
+#thumbs-up{
+    border: none;
+    background-color: transparent;
+    padding: 0 15px;
+    font-size: 17px;
+}
+
+#like-number{
+    font-size: 15px;
+    letter-spacing: 0px;
+}
+
+#thumbs-down{
+    background-color: transparent;
+    border: none;
+    padding: 0 17px;
+    font-size: 17px;
+    transform: rotateY(180deg);
+    cursor: pointer;
+}
+
+#thumbs-down:hover{
+    border-radius: 20px 0 0 20px;
+    background-color: #e4e4e4;
+}
+
+.share{
+    flex-basis: 8%;
+    display: flex;
+    background-color: #f4f2f2;
+    line-height: 0.5;
+    border-radius: 20px;
+    font-size: 15px;
+    padding: 0 15px;
+    cursor: pointer;
+}
+
+.share:hover{
+    border-radius: 20px;
+    background-color: #e4e4e4;
+}
+
+#share-button{
+    background-color: transparent;
+    border: none;
+}
+
+.offline-saving{
+    flex-basis: 15%;
+    display: flex;
+    background-color: #f4f2f2;
+    line-height: 0.5;
+    border-radius: 20px;
+    margin: 0 10px;
+    font-size: 15px;
+    padding: 0 15px;
+    cursor: pointer;
+}
+
+.offline-saving:hover{
+    border-radius: 20px;
+    background-color: #e4e4e4;
+}
+
+
+#offline-saving-button{
+    background-color: transparent;
+    border: none;
+} 
+
+#more-button{
+    flex-basis: 2%;
+    background-color: #f4f2f2;
+    line-height: 0.5;
+    border-radius: 100px;
+    font-size: 15px;
+    cursor: pointer;
+    border: none;
+    padding: 15px 12px;
+}
+
+#more-button:hover{
+    background-color: #e4e4e4;
+}
+
+
+/* ------------------------ */
+
+.content{
+    padding: 20px 10px;
+    background-color: #e6e6e6;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+/* --------------------- */
+
+.comment{
+    display: flex;
+    flex-direction: column;
+}
+
+.comment > .array{
+    flex-basis: 10%;
+    display: flex;
+}
+
+.array-button{
+    margin-left: 30px;
+    display: flex;
+    cursor: pointer;
+}
+
+#array-button-icon{
+    background-color: transparent;
+    border: none;
+}
+
+.input-comment{
+    display: flex;
+}
+
+.content-input-text{
+    border: none;
+    margin-left: 10px;
+    width: 100px;
+    padding: 10px;
+}
+
+.content-input-text:focus{
+    outline: transparent;
+    size: 100;
+}
+
+#zombie{
+    width: 50px;
+    height: 45px;
+}
+
+.comment-detail{
+    margin-top: 15px;
+    flex-basis: 90%;
+    display: flex;
+    margin-top: 30px;
+}
+
+.comment-detail2{
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.commenter{
+    text-decoration: none;
+    color: black;
+    line-height: 0;    
+}
+
+.comment-content{
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+.comment-like{
+    display: flex;
+}
+
+#comment-thumbs-up{
+    background-color: transparent;
+    border: none;
+    font-size: 15px;
+    padding: 10px;
+    cursor: pointer;;
+}
+
+#comment-thumbs-up:hover{
+    background-color: #e5e5e5;
+    border-radius: 50px;
+}
+
+#comment-like-number{
+    font-size: 15px;
+    line-height: 0;
+}
+
+#comment-thumbs-down{
+    margin-left: 10px;
+    background-color: transparent;
+    border: none;
+    font-size: 15px;
+    padding: 10px;
+    cursor: pointer;;
+}
+
+#comment-thumbs-down:hover{
+    background-color: #e5e5e5;
+    border-radius: 50px;
+}
+
+/* ------------------------------------- */
+
+
+.recommand {
+    display: flex;
+    flex-direction: column;
+}
+
+.recommand-menu{
+    display: flex;
+    padding: 0;
+}
+
+.recommand-menu li{
+    list-style: none;
+    background-color: #e6e6e6;
+    border-radius: 10px;
+    padding: 0 10px;
+    margin : 0 5px;
+    cursor: pointer;
+}
+
+.recommand-menu li:hover{
+    background-color: #cacaca;
+    border-radius: 10px;
+    padding: 0 10px;
+    margin : 0 5px
+}
+
+.recommand-menu li p{
+    font-size: 13px;
+}
+.recommand-video-very-top{
+    border-radius: 10px;
+}
+
+.recommand-top-video{
+    display: flex;
+    margin: 20px 0;
+}
+
+.recommand-title{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+}
+
+.recommand-title p{
+    margin: 0;
+    font-size: 12px;
+}
+
+#side-video-title{
+    font-size: 14px;
+    color: black;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.recommand-creator{
+    display: flex;
+}
+
+#recommand-top{
+    border-radius: 15px;
+}
+
+.shorts-title{
+    display: flex;
+    margin: 20px 0;
+}
+
+#shorts-img{
+    width: 20px;
+    height: 25px;
+}
+
+.shorts-title p {
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0 10px;
+    padding: 0;
+}
+
+.shorts{
+    margin-bottom: 20px;
+}
+
+.shorts-video{
+    display: flex;
+}
+
+.shorts-video img{
+    width: 150px;
+    height: 250px;
+    border-radius: 10px;
+    margin: 0 3px;
+    border: transparent;
+}
+
+.shorts-video-title{
+    display: inline-block;
+    overflow: hidden; 
+    white-space: nowrap;  		
+    text-overflow: ellipsis;  	
+    word-break:break-all;
+    color: black;
+    cursor: pointer;
+
+    font-size: 15px;
+    width: 140px;
+    height: 30px;
+    margin: 5px 0;
+    padding: 0;
+
+}
+
+.play-count{
+    margin: 0;
+    width: 140px;
+    padding: 0;
+    font-size: 12px;
+    color: gray;
+}
+
+.recommand-video{
+    width : 180px;
+    height : 100px;
+    border-radius: 10px;
+}
+
+.side-video{
+    display: flex;
+    margin: 10px 0;
+}
+
+.side-video-content{
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px;
+    padding: 0;
+}
+
+.recommand-video-title{
+    width: 250px;
+    height: 30px;
+    color: black;
+
+    display: inline-block;
+    
+    overflow: hidden;  		
+    text-overflow: ellipsis;
+    white-space: nowrap;  	
+    word-break:break-all;
+
+    font-size: 13px;
+    font-weight: 600;
+    margin: 0;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.side-video-creator{
+    margin: 0;
+    font-size: 12px;
+}
+
+.side-video-play-count{
+    margin: 0;
+    font-size: 12px;
+}
+
+.side-video-kind{
+    width: 55px;
+    padding: 0;
+    margin: 0;
+    font-size: 12px;
+    background-color: #e5e5e5;
+
+}
+
+hr{
+    border: 1px solid rgba(218, 218, 218, 0.4);
+    width: 500px;
+}
+
+
+/* 태블릿 */
+@media all and (max-width:1000px) { 
+
+    .main-content{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .recommand-top-video{
+        display: none;
+    }
+    
+    .shorts{
+        display: none;
+    }
+
+    .recommand-menu-container{
+        display: none;
+    }
+
+}
+
+/* pc 해상도 1024px*/
+@media all and (min-width:1024px) {
+
+} 
+
