@@ -123,7 +123,7 @@ input[name="fruits"]:checked{
 
 /* 체크'된' #check1 뒤에 있는 label 태그 */
 #check1:checked + label{
-    background-image: url(/iamges/imageedit_3_2348370415.gif);
+    background-image: url(/images/check\(looped\).gif);
     background-repeat: no-repeat; /*이미지 반복 제거*/
     background-size: cover;
 }
