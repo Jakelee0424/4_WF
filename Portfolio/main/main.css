@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+    box-sizing: border-box;
+}
+
+
+#main-page{
+    background-image: url(/Portfolio/images/mylivewallpapers.com-Glitch-Skull.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: black;
+    
+}
+
+.header{
+    height: 1em;
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 150px;
+}
+
+#name-tag{
+    position: absolute; 
+    color: #FFF;
+    font-family: 'Microgramma D';
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+}
+
+#main-title{
+    width: 100%;
+    color: #FFF;
+    font-family: 'Microgramma D';
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+}
+
+.menu{
+    height: 10em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    
+    font-family: 'Microgramma D';
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.a-label{
+    
+    text-decoration: none;
+}
+
+[name=Contact]{
+    -webkit-text-stroke: 1px white;
+    color: transparent;
+    cursor: pointer;
+    transition-duration: 500ms;
+    transition-timing-function: ease-in-out;
+}
+
+[name=Contact]:hover{
+    color: #50A859;
+    -webkit-text-stroke: 1px #50A859;
+    transition-duration: 500ms;
+}
+
+[name=About-me]{
+    -webkit-text-stroke: 1px white;
+    color: transparent;
+    cursor: pointer;
+    transition-duration: 500ms;
+    transition-timing-function: ease-in-out;
+}
+
+[name=About-me]:hover{
+    color: #ED3333;
+    -webkit-text-stroke: 1px #ED3333;
+    transition-duration: 500ms;
+}
+
+[name=Skills]{
+    -webkit-text-stroke: 1px white;
+    color: transparent;
+    cursor: pointer;
+    transition-duration: 500ms;
+    transition-timing-function: ease-in-out;
+}
+
+[name=Skills]:hover{
+    color: #CC07D0;
+    -webkit-text-stroke: 1px #CC07D0;
+    transition-duration: 500ms;
+}
+
+
+[name=Projects]{
+    -webkit-text-stroke: 1px white;
+    color: transparent;
+    cursor: pointer;
+    transition-duration: 500ms;
+    transition-timing-function: ease-in-out;
+}
+
+[name=Projects]:hover{
+    color: #F5BF00;
+    -webkit-text-stroke: 1px #F5BF00;
+    transition-duration: 500ms;
+}
+

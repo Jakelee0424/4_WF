@@ -89,7 +89,8 @@ img{
 .test2:hover{
     transform: rotate(360deg);
     background-color: skyblue;
-    transition-duration: 1s;
+    transition-duration: 3s;
+    transition-timing-function: ease-in-out;
     border-radius: 100%;
 }
 

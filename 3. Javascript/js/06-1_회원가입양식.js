@@ -218,6 +218,4 @@ function validate(){
 
 //     }
 
-
-
 // };

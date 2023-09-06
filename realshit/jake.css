@@ -1,0 +1,186 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+#carousel-wrapper {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    
+}
+
+#carousel{
+    background-color: black;
+    
+    display: flex;
+    /* flex-wrap: wrap; */
+    
+    transform: translate3d(0, 0, 0);
+    transition: all 0.1s;
+}
+
+#menu-page{
+    background-image: url(/Portfolio/images/mylivewallpapers.com-Glitch-Skull.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+}
+
+.header {
+    height: 1em;
+    display: flex;
+    
+    margin-top: 10px;
+    margin-bottom: 150px;
+}
+
+.nameTag {
+    position: absolute;
+    color: #FFF;
+    font-family: 'Microgramma D';
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    cursor: pointer;
+    
+    margin-left: 15px;
+}
+
+.main-title {
+    width: 100%;
+    color: #FFF;
+    font-family: 'Microgramma D';
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+}
+
+.menu {
+    height: 10em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    
+    font-family: 'Microgramma D';
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+#contact {
+    -webkit-text-stroke: 1px white;
+    color: transparent;
+    cursor: pointer;
+    transition-duration: 500ms;
+    transition-timing-function: ease-in-out;
+}
+
+#contact:hover {
+    color: #50A859;
+    -webkit-text-stroke: 1px #50A859;
+    transition-duration: 500ms;
+}
+
+#aboutMe {
+    -webkit-text-stroke: 1px white;
+    color: transparent;
+    cursor: pointer;
+    transition-duration: 500ms;
+    transition-timing-function: ease-in-out;
+}
+
+#aboutMe:hover {
+    color: #ED3333;
+    -webkit-text-stroke: 1px #ED3333;
+    transition-duration: 500ms;
+}
+
+#skills {
+    -webkit-text-stroke: 1px white;
+    color: transparent;
+    cursor: pointer;
+    transition-duration: 500ms;
+    transition-timing-function: ease-in-out;
+}
+
+#skills:hover {
+    color: #CC07D0;
+    -webkit-text-stroke: 1px #CC07D0;
+    transition-duration: 500ms;
+}
+
+#projects {
+    -webkit-text-stroke: 1px white;
+    color: transparent;
+    cursor: pointer;
+    transition-duration: 500ms;
+    transition-timing-function: ease-in-out;
+}
+
+#projects:hover {
+    color: #F5BF00;
+    -webkit-text-stroke: 1px #F5BF00;
+    transition-duration: 500ms;
+}
+
+/* --------------------------------------------------- */
+
+#about-me-page{
+    width: 100vw;
+    height: 100vh;
+}
+
+#introduce{
+    text-align: center;
+    color: #FFF;
+    font-family: 'Microgramma D';
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+/* ----------------------------------------------------- */
+
+#contact-page{
+    width: 100vw;
+    height: 100vh;
+}
+
+#contactMenu{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    line-height: 100vh;
+}
+
+/* ---------------------------------------------------- */
+
+#skills-page{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#skills-menu{
+    display: flex;
+    justify-content: center;
+}
+
+#backEnd{
+    display: flex;
+}
+
+#javaIconBf, #javaIconAt{
+    position: absolute;
+}
+
+
