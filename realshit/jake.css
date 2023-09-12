@@ -3,31 +3,30 @@
     margin: 0;
 }
 
-#carousel-wrapper {
+#main-container {
     width: 100vw;
     height: 100vh;
     display: flex;
     
 }
 
-#carousel{
+#containerForSlide{
     background-color: black;
     
     display: flex;
-    /* flex-wrap: wrap; */
     
     transform: translate3d(0, 0, 0);
     transition: all 0.1s;
 }
 
 #menu-page{
-    background-image: url(/Portfolio/images/mylivewallpapers.com-Glitch-Skull.gif);
+    background-image: url(/images/배경1-1.gif);
     background-size: cover;
     background-repeat: no-repeat;
     width: 100vw;
     height: 100vh;
 }
-
+ 
 .header {
     height: 1em;
     display: flex;
@@ -62,16 +61,33 @@
 
 .menu {
     height: 10em;
+    margin-top: 300px;
+
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
     
     font-family: 'Microgramma D';
     font-size: 64px;
-    font-style: normal;
     font-weight: 700;
-    line-height: normal;
+}
+
+.arrow{
+    margin: 0 20px;
+    color: #FFF;
+    visibility: hidden;
+    /* transition: visibility 0.3s, opacity 0.3s; */
+
+    animation: arrowRotate 1.5s infinite;
+}
+
+@keyframes arrowRotate{
+    50% {transform : rotateX(180deg);}
+}
+
+
+.menuName{
+    display: flex;
 }
 
 #contact {
@@ -83,51 +99,47 @@
 }
 
 #contact:hover {
-    color: #50A859;
-    -webkit-text-stroke: 1px #50A859;
-    transition-duration: 500ms;
+    color: #fff;
+    -webkit-text-stroke: 1px #fff;
 }
 
 #aboutMe {
     -webkit-text-stroke: 1px white;
     color: transparent;
     cursor: pointer;
-    transition-duration: 500ms;
+    transition-duration: 300ms;
     transition-timing-function: ease-in-out;
 }
 
 #aboutMe:hover {
-    color: #ED3333;
-    -webkit-text-stroke: 1px #ED3333;
-    transition-duration: 500ms;
+    color: #fff;
+    -webkit-text-stroke: 1px #fff;
 }
 
 #skills {
     -webkit-text-stroke: 1px white;
     color: transparent;
     cursor: pointer;
-    transition-duration: 500ms;
+    transition-duration: 300ms;
     transition-timing-function: ease-in-out;
 }
 
 #skills:hover {
-    color: #CC07D0;
-    -webkit-text-stroke: 1px #CC07D0;
-    transition-duration: 500ms;
+    color: #fff;
+    -webkit-text-stroke: 1px #fff;
 }
 
 #projects {
     -webkit-text-stroke: 1px white;
     color: transparent;
     cursor: pointer;
-    transition-duration: 500ms;
+    transition-duration: 300ms;
     transition-timing-function: ease-in-out;
 }
 
 #projects:hover {
-    color: #F5BF00;
-    -webkit-text-stroke: 1px #F5BF00;
-    transition-duration: 500ms;
+    color: #fff;
+    -webkit-text-stroke: 1px #fff;
 }
 
 /* --------------------------------------------------- */
@@ -135,6 +147,11 @@
 #about-me-page{
     width: 100vw;
     height: 100vh;
+    background-image: url(/images/배경2-1.gif);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+
 }
 
 #introduce{
@@ -142,9 +159,8 @@
     color: #FFF;
     font-family: 'Microgramma D';
     font-size: 30px;
-    font-style: normal;
     font-weight: 700;
-    line-height: normal;
+    margin-top: 250px;
 }
 
 /* ----------------------------------------------------- */
@@ -152,13 +168,39 @@
 #contact-page{
     width: 100vw;
     height: 100vh;
+    background-image: url(/images/배경3-1.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 #contactMenu{
     display: flex;
     justify-content: center;
     justify-content: space-around;
-    line-height: 100vh;
+    margin-top: 450px;
+}
+
+.icon{
+    width: 100px;
+    height: 100px;
+}
+
+#emailIcon{
+    cursor: pointer;
+}
+
+#emailAdd{
+    position: fixed;
+    top : 55%;
+
+    text-align: center;
+    font-family: 'Microgramma D';
+    font-size: 30px;
+    font-weight: 700;
+    visibility: hidden;
+
+    transition: visibility 1s, opacity 1s;
 }
 
 /* ---------------------------------------------------- */
@@ -171,16 +213,53 @@
 }
 
 #skills-menu{
+    text-align: center;
+    color: #FFF;
+    font-family: 'Microgramma D';
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 200px;
     display: flex;
     justify-content: center;
+    justify-content: space-around;
 }
 
-#backEnd{
+.iconAt{
+    margin: 50px 20px;
+
+    filter: grayscale(100%);
+    height: 100px;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.skillNameContainer{
+    position: relative;
+}
+
+.skillName{
     display: flex;
-}
 
-#javaIconBf, #javaIconAt{
+    justify-content: center;
+    flex-wrap: wrap;
     position: absolute;
+    transition: visibility 0.5s, opacity 0.5s;
+
+    visibility: hidden;
 }
 
+#java{
+    left: 25%;
+}
 
+#html{
+    left: 34%;
+}
+
+#css{
+    left: 37%;
+}
+
+#js{
+    left: 24%;
+}
