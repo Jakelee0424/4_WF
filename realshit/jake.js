@@ -10,6 +10,7 @@ const menuPage = document.getElementById("menu-page")
 const nameTag = document.getElementsByClassName("nameTag")[1];
 const nameTag2 = document.getElementsByClassName("nameTag")[2];
 const nameTag3 = document.getElementsByClassName("nameTag")[3];
+const nameTag4 = document.getElementsByClassName("nameTag")[4];
 
 let index = 0;
 
@@ -128,3 +129,21 @@ iconAtElements.forEach(function (iconAt, index) {
     });
 
 });
+
+// projects ---------------------------------------------------------------------------
+
+
+projects.addEventListener("click", function(){
+    
+    index += 4;
+    containerForSlide.style.transform = `translate3d(-${100 * index}vw, 0, 0)`;
+    
+})
+
+nameTag4.addEventListener("click", function(){
+
+    index -= 4;
+    containerForSlide.style.transform = `translate3d(-${100 * index}vw, 0, 0)`;
+    
+});
+

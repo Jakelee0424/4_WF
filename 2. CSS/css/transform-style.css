@@ -55,20 +55,22 @@ img{
 
 .trans-3d:active{
     /* perspective(z축의 길이) : 원근법 적용 */
-    transform: perspective(300px) translate3d(50px, 50px, 200px);
+    transform: perspective(300px) translate3d(50px, 50px, 100px);
 }
 
 .trans-rotate-x-3d:active{
-    transform: perspective(300px) rotateX(180deg);
+    transition-duration: 1s;
+    transform: rotateX(100deg);
 }
 
 .trans-rotate-y-3d:active{
     transition-duration: 1s;
-    transform: perspective(300px) rotateY(90deg);
+    transform: rotateY(90deg);
 }
 
 .trans-rotate-z-3d:active{
-    transform: perspective(300px) rotateZ(45deg);
+    transition-duration: 1s;
+    transform: rotateZ(45deg);
 }
 
 /*  */

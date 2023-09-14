@@ -3,6 +3,15 @@
     margin: 0;
 }
 
+video { 
+    position: absolute;
+    z-index: -1;
+    
+    width: 100vw; 
+    height: 100vh;
+    object-fit: cover;
+}
+
 #main-container {
     width: 100vw;
     height: 100vh;
@@ -20,9 +29,6 @@
 }
 
 #menu-page{
-    background-image: url(/images/배경1-1.gif);
-    background-size: cover;
-    background-repeat: no-repeat;
     width: 100vw;
     height: 100vh;
 }
@@ -144,14 +150,13 @@
 
 /* --------------------------------------------------- */
 
+#aboutMeBackground{
+    object-fit: contain;
+}
+
 #about-me-page{
     width: 100vw;
     height: 100vh;
-    background-image: url(/images/배경2-1.gif);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-
 }
 
 #introduce{
@@ -168,10 +173,6 @@
 #contact-page{
     width: 100vw;
     height: 100vh;
-    background-image: url(/images/배경3-1.gif);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
 }
 
 #contactMenu{
@@ -180,7 +181,6 @@
     justify-content: space-around;
     margin-top: 450px;
 }
-
 .icon{
     width: 100px;
     height: 100px;
@@ -196,6 +196,7 @@
 
     text-align: center;
     font-family: 'Microgramma D';
+    color: #FFF;
     font-size: 30px;
     font-weight: 700;
     visibility: hidden;
@@ -262,4 +263,24 @@
 
 #js{
     left: 24%;
+}
+
+/* -------------------------------- */
+#projects-page{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#projectsMenu{
+    text-align: center;
+    color: #FFF;
+    font-family: 'Microgramma D';
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 200px;
+
+    display: flex;
+    justify-content: space-around;
 }
