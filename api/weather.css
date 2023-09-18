@@ -11,8 +11,7 @@
     display: flex;
 }
 
-
-.container > div > img {
+#clouds{
     width: 40px;
     height: 40px;
 }
