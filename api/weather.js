@@ -9,7 +9,7 @@ const weatherInIncheon = document.getElementById('weatherInIncheon');
 const cloud = document.getElementById("cloud");
 
 (function getWeatherSeoul(){
-    fetch(`https://api.openweathermap.org/data/2.5/weather?q=seoul,kr&appid=0bc93ab707044ce12e60a520cf7d807e`)
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=seoul,kr&appid=`)
     .then(response => response.json())
     .then(data => {
         weatherInSeoul.innerHTML += `<br>${Math.round(Number(data.main.temp) - 273.15)}°C`;
@@ -19,7 +19,7 @@ const cloud = document.getElementById("cloud");
 
 
 (function getWeatherBusan(){
-    fetch(`https://api.openweathermap.org/data/2.5/weather?q=busan,kr&appid=0bc93ab707044ce12e60a520cf7d807e`)
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=busan,kr&appid=`)
     .then(response => response.json())
     .then(data => {
         weatherInBusan.innerHTML += `<br>${Math.round(Number(data.main.temp) - 273.15)}°C`;
@@ -29,7 +29,7 @@ const cloud = document.getElementById("cloud");
 
 
 (function getWeatherDaejeon(){
-    fetch(`https://api.openweathermap.org/data/2.5/weather?q=Daejeon,kr&appid=0bc93ab707044ce12e60a520cf7d807e`)
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=Daejeon,kr&appid=`)
     .then(response => response.json())
     .then(data => {
         weatherInDaejeon.innerHTML += `<br>${Math.round(Number(data.main.temp) - 273.15)}°C`;
@@ -38,7 +38,7 @@ const cloud = document.getElementById("cloud");
 })();
 
 (function getWeatherjeju(){
-    fetch(`https://api.openweathermap.org/data/2.5/weather?q=jeju,kr&appid=0bc93ab707044ce12e60a520cf7d807e`)
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=jeju,kr&appid=`)
     .then(response => response.json())
     .then(data => {
         weatherJeju.innerHTML += `<br>${Math.round(Number(data.main.temp) - 273.15)}°C`;
@@ -47,7 +47,7 @@ const cloud = document.getElementById("cloud");
 })();
 
 (function getWeathergwangju(){
-    fetch(`https://api.openweathermap.org/data/2.5/weather?q=gwangju,kr&appid=0bc93ab707044ce12e60a520cf7d807e`)
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=gwangju,kr&appid=`)
     .then(response => response.json())
     .then(data => {
         weatherGwangju.innerHTML += `<br>${Math.round(Number(data.main.temp) - 273.15)}°C`;
@@ -56,7 +56,7 @@ const cloud = document.getElementById("cloud");
 })();
 
 (function getWeatherWonju(){
-    fetch(`https://api.openweathermap.org/data/2.5/weather?q=wonju,kr&appid=0bc93ab707044ce12e60a520cf7d807e`)
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=wonju,kr&appid=`)
     .then(response => response.json())
     .then(data => {
         weatherInWonju.innerHTML += `<br>${Math.round(Number(data.main.temp) - 273.15)}°C`;
@@ -65,7 +65,7 @@ const cloud = document.getElementById("cloud");
 })();
 
 (function getWeatherIncheon(){
-    fetch(`https://api.openweathermap.org/data/2.5/weather?q=incheon,kr&appid=0bc93ab707044ce12e60a520cf7d807e`)
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=incheon,kr&appid=`)
     .then(response => response.json())
     .then(data => {
         weatherInIncheon.innerHTML += `<br>${Math.round(Number(data.main.temp) - 273.15)}°C`;
@@ -74,7 +74,7 @@ const cloud = document.getElementById("cloud");
 })();
 
 
-// 0bc93ab707044ce12e60a520cf7d807e
+
 
 
 let num = 0;
@@ -97,7 +97,7 @@ function getWeather(){
 
     weather.innerHTML += `${korRegion}날씨` // korRegion + "날씨";
 
-    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${region}kr&appid=0bc93ab707044ce12e60a520cf7d807e`)
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${region}kr&appid=`)
     .then(response => response.json())
     .then(data => {
         
