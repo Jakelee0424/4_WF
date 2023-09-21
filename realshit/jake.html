@@ -7,9 +7,11 @@
     <title>jake's-portfolio</title>
 
     <link rel="stylesheet" href="/realshit/jake.css" type="text/css">
+    <script src="https://kit.fontawesome.com/b2efae0e57.js" crossorigin="anonymous"></script>
 </head>
 
 <!-- " -->
+
 <body style="overflow: hidden;">
     <div id="main-container">
 
@@ -18,12 +20,12 @@
             <div id="menu-page">
 
                 <video muted autoplay loop>
-                <source src="/images/배경 0.mp4" type="video/mp4">
+                    <source src="/images/배경 0.mp4" type="video/mp4">
                 </video>
 
                 <header class="header">
                     <p class="nameTag">@JAKE</p>
-                    <p class="main-title">Jake's portfolio</p>
+                    <p class="main-title"> Jake's portfolio</p>
                 </header>
 
                 <main class="menu">
@@ -31,10 +33,10 @@
                         <p class="arrow">>></p>
                         <p id="aboutMe">About me</p>
                     </div>
-                    <div class="menuName">
+                    <!-- <div class="menuName">
                         <p class="arrow">>></p>
                         <p id="contact">Contact</p>
-                    </div>
+                    </div> -->
                     <div class="menuName">
                         <p class="arrow">>></p>
                         <p id="skills">Skills</p>
@@ -52,9 +54,9 @@
             <div id="about-me-page">
 
                 <video id="aboutMeBackground" muted autoplay loop>
-                <source src="/images/배경 2.mp4" type="video/mp4">
+                    <source src="/images/배경4.mp4" type="video/mp4">
                 </video>
-    
+
 
                 <header class="header">
                     <p class="nameTag">@JAKE</p>
@@ -62,57 +64,88 @@
                 </header>
 
                 <main>
-                    <p id="introduce">
-                        Hi!<br><br>
-                        I'm jake<br>
-                        the<br>
-                        Developer<br><br>
+                    <div id="introduce">
 
-                        always<br>
-                        struggling<br><br>
+                        <p >
+                            Hi!<br><br>
+                            I'm jake<br>
+                        </p>
+                        <p>
+                            the<br>
+                            Developer<br><br>
+                        </p>
+                        <p>
+                            always<br>
+                            struggling<br><br>
+                            
+                            and<br><br>
+                            
+                            humble<br>
+                        </p>
+                    </div>
+                        
+                    <div id="contactMenu">
+                        <a href="https://github.com/Jakelee0424" target="_blank">
+                            <img class="icon" src="/images/github-icon.png" alt="">
+                        </a>
 
-                        and<br><br>
+                        <img id="emailIcon" class="icon" src="/images/email-icon.png" alt="">
 
-                        humble<br>
-                    </p>
+                        <a href="https://velog.io/@jklee0424" target="_blank">
+                            <img class="icon" src="/images/velog-icon.png" alt="">
+                        </a>
+
+                        <p id="emailAdd">" qkql006@gmail.com "</p>
+                    </div>
 
                 </main>
 
             </div>
 
-            <div id="contact-page">
+            <!--    <div id="contact-page">
 
                 <video muted autoplay loop>
-                <source src="/images/배경 3.mp4" type="video/mp4">
+                    <source src="/images/배경 1.mp4" type="video/mp4">
                 </video>
 
                 <header class="header">
                     <p class="nameTag">@JAKE</p>
                     <p class="main-title">Contact</p>
+                    <div id="headNav">
+
+                        <a href="https://github.com/Jakelee0424" target="_blank">
+                            <img class="headIcon" src="/images/github-black.png" alt="">
+                        </a>
+
+                        <a href="https://velog.io/@jklee0424" target="_blank">
+                            <img class="headIcon" src="/images/velog-black.png" alt="">
+                        </a>
+
+                    </div> 
                 </header>
 
                 <main id="contactMenu">
-                    <a href="/images/github-icon.png" target="_blank">
+                    <a href="https://github.com/Jakelee0424" target="_blank">
                         <img class="icon" src="/images/github-black.png" alt="">
                     </a>
 
                     <img id="emailIcon" class="icon" src="/images/emil-black.png" alt="">
-            
+
                     <a href="https://velog.io/@jklee0424" target="_blank">
                         <img class="icon" src="/images/velog-black.png" alt="">
                     </a>
 
                     <p id="emailAdd">" qkql006@gmail.com "</p>
-                    
+
 
                 </main>
 
-            </div>
+            </div>-->
 
             <div id="skills-page">
-                
+
                 <video muted autoplay loop>
-                <source src="/images/배경 1.mp4" type="video/mp4">
+                    <source src="/images/배경 5.mp4" type="video/mp4">
                 </video>
 
                 <header class="header">
@@ -123,24 +156,38 @@
                 <main id="skills-menu">
                     <div class="skills" id="backEnd">
                         <p>Back-end</p>
-                        <img class="iconAt" id="javaIconAt" src="/Portfolio/images/devicon_java.png" alt="">
+                        <img class="iconAt" id="javaIconAt" src="/images/devicon_java.png" alt="">
+                        <img class="iconAt" id="tomcatIcon" src="/images/tomcat.png" alt="">
                         <div class="skillNameContainer">
                             <p class="skillName" id="java">Java</p>
+                            <p class="skillName" id="tomcat">Tomcat</p>
                         </div>
                     </div>
-                    
+
                     <div class="skills" id="frontEnd">
                         <p>Front-end</p>
-                        
+
                         <img class="iconAt" src="/images/html-color.png" alt="">
                         <img class="iconAt" src="/images/css-color.png" alt="">
                         <img class="iconAt" src="/images/javascript-color.png" alt="">
+                        
                         <div class="skillNameContainer">
                             <p class="skillName" id="html">HTML</p>
                             <p class="skillName" id="css">CSS</p>
                             <p class="skillName" id="js">Javascript</p>
                         </div>
-                    
+
+                    </div>
+
+                    <div class="skills" id="dataBase">
+                        <p>Database</p>
+                        <img id="oracleIcon" , class="iconAt" src="/images/oracle.png" alt="">
+                        
+                        <div class="skillNameContainer">
+                            <p class="skillName" id="oracle">Oracle</p>
+                        </div>
+
+
                     </div>
 
                 </main>
@@ -149,16 +196,34 @@
 
 
             <div id="projects-page">
-                
+
                 <header class="header">
                     <p class="nameTag">@JAKE</p>
                     <P class="main-title">Projects</p>
                 </header>
-              
-                <main  id="projectsMenu">
 
-                    <p id="cloneCoding">Clone<br>coding</p>
-                    <p id="others">Others</p>
+
+                <main id="projectsMenu">
+
+                    <span class="projectArrow">
+                        <button id="left" type="button" class="fa-solid fa-arrow-left"></button>
+                        <button id="right" type="button" class="fa-solid fa-arrow-right"></button>
+                    </span>
+
+
+
+                    <span id="projectsContainer">
+                        
+                        <div id="youtubeContainer">
+                            <img class="projectsImg" id="cloneCodingImg" src="/images/project/youtube-clone.PNG" alt="">
+                            <p id="cloneCoding" class="projectName">Clone<br>coding</p>
+                        </div>
+                        
+                        <div id="teamProjectContainer">
+                            <img class="projectsImg" id="teamProjectImg" src="/images/project/team.PNG" alt="">
+                            <p id="teamProject" class="projectName">Team<br>Project</p>
+                        </div>
+                    </span>
 
                 </main>
 
